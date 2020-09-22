@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Christina's Website</title>
+        <style>
+            body {
+                background: rgb(255, 201, 201);
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: Georgia, serif;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+
+            /* navigation menu */
+            nav {
+                background: rgb(255, 140, 140);
+                margin: 0 auto;
+                margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
+                border-radius: 10px;
+                border: 3px solid pink;
+            }
+            h1 {
+                display: flex;
+                align-items: center;
+                color: white;
+                flex: 1;
+                margin: 0;
+            }
+            #nav-ul {
+                list-style-image: none;
+            }
+            .nav-li {
+                display: inline-block;
+                padding: 0 10px;
+                font-family: Georgia, serif;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+
+            /* main container area beneath menu */
+            main {
+                background: rgb(255, 230, 230);
+                display: flex;
+                border-radius: 10px;
+                color: darkslategray;
+                border: 3px solid pink;
+                font-family: Georgia, serif;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar-img {
+                width: 200px;
+                border: 3px solid pink;
+                border-radius: 10px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            #interests {
+                background: rgb(255, 140, 140);
+                color: white;
+                border: 3px solid pink;
+                border-radius: 10px;
+                padding: 8px;
+                font-family: Georgia, serif;
+            }
+            h2, h3 {
+                margin: 0px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <!-- All content goes here -->
+        <div id="all-contents"> 
+            <nav>
+                <h1>Christina's Website</h1>
+                <ul id="nav-ul">
+                    <li class="nav-li">
+                    <a href="index.html"> Home </a>
+                    </li>
+                    <li class="nav-li">
+                    <a href="portfolio.html"> Portfolio </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <main>
+                <!-- Sidebar section -->
+                <div class = "sidebar">
+                    <img class = "sidebar-img" src="https://static.boredpanda.com/blog/wp-content/uploads/2020/07/expressive-cat-nana-1-4-5f16cff195d6f__700.jpg" width=200 height=200>
+                </div>
+
+                <!-- Content section -->
+                <div class="content">
+                    <h2>Christina You</h2>
+                    <p>Student at Benjamin Franklin High School
+                        <!-- Interests section -->
+                        <div id = "interests">
+                            <h3>Interests</h3>
+                            <ul>
+                                <li>Video Games</li>
+                                <li>Speech and Debate</li>
+                                <li>Art</li>
+                            </ul>
+                        </div>
+                    </p>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
