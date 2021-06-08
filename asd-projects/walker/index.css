@@ -12,10 +12,21 @@ body {
 }
 
 #gameItem {
-  background-color: teal;
+  background-color: blue;
   width: 50px;
   height: 50px;
+  border-radius: 50px;
   position: absolute;
-/*   left: 100px; */  /* Uncomment if you want to set a "starting" position */
-/*   top: 100px;  */  /* Uncomment if you want to set a "starting" position */
+  left: 100px;  /* Uncomment if you want to set a "starting" position */
+  top: 100px;   /* Uncomment if you want to set a "starting" position */
+}
+
+#gameItemTwo{
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  left: 390px;
+  top: 390px;
 }
