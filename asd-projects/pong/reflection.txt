@@ -1,0 +1,45 @@
+User Story / Gameplay:
+Describe the gameplay
+    Two players control a box. A ball can be hit and bounce off of the boxes or the wall. If the ball is not hit by a player's box and goes past a box and off the screen, the player who hits the ball gains a point. The first player to get 11 points wins. 
+What are the conditions when the game begins?
+    There are two boxes on opposite sides of a screen split in half by a dotted line. There is a ball in the middle that starts moving in a random direction when the game starts. The scoreboard is at 0. 
+Does the game have an end? If so, what are the conditions for when it ends?
+    The game ends when a player reaches 11 points. 
+What ifs will there be?
+    If the ball is not hit and goes past a player's box/screen, the opposite player gains a point, and the ball returns back to the middle. 
+    If a player reaches 11 points, the games ends.
+    If the ball hits a box, it bounces in the opposite direction.
+    If the ball hits a wall, it bounces off of the wall.
+    If a player's box hits the end of the screen, stop the box's movement.
+    If the game ends, reset the scoreboard. 
+
+Visual Game Components:
+What are the visual game components? For example, in Bouncing Box, the game components were the board and the box.
+    The board, the boxes, the ball, the dotted line dividing the board in half
+Which will be static? (the board)
+    The board
+Which will be animated? (the box)
+    The box, the ball
+What data will you need to manage each game component? For example, in Bouncing Box, the data values were positionX, speedX, and points.
+    Position and velocities of both boxes and the ball, points
+
+Events / Logic:
+What events will occur in this game? (timer events, keyboard events, clicking events?)
+    Player 1 uses the w and s keys to move their box up and down, while Player 2 uses the up and down arrow keys to move their box up and down.
+    When the board is clicked with the left mouse button, the game pauses (everything stops moving).
+How do those events affect the data of the program?
+    The keyboard events affect the position of the boxes.
+    The clicking events stop variables from changing/updating. 
+For each "event", write out the high-level logic of what will happen. It is better (and tricky) to be as specific as you can while remaining high-level!
+    If W is clicked
+        Change the velocity of Player 1's box (will always be y-value) to a positive number
+    If S is clicked
+        Change the velocity of Player 1's box to a negative number
+    If up arrow key is clicked
+        Change the velocity of Player 2's box to a positive number
+    If down arrow key is clicked
+        Change the velocity of Player 2's box to a negative number
+    If mouse left is clicked
+        Change the velocity of Player 1's box to 0
+        Change the velocity of Player 2's box to 0
+        Change the velocity of the ball to 0
