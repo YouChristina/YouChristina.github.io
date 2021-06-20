@@ -1,21 +1,65 @@
 
 body {
-  background-color: darkgreen;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 #board {
-  width: 440px;
-  height: 440px;
+  width: 800px;
+  height: 500px;
   border: 1px solid white;
-  background-color: black;
+  background-color: rgb(41, 41, 41);
   position: relative;
 }
 
-#gameItem {
-  background-color: teal;
+#scoreboardOne {
+  background-color: rgb(180, 180, 180);
   width: 50px;
-  height: 50px;
+  height: 220px;
   position: absolute;
-/*   left: 100px; */  /* Uncomment if you want to set a "starting" position */
-/*   top: 100px;  */  /* Uncomment if you want to set a "starting" position */
+  left: 350px;
+  top: 500px;
+}
+
+#scoreboardTwo {
+  background-color: rgb(180, 180, 180);
+  width: 50px;
+  height: 220px;
+  position: absolute;
+  left: 400px;
+  top: 500px;
+}
+
+#dottedLine {
+  border-left: 5px dashed white;
+  height: 500px;
+  position: relative;
+  left: 397.5px;
+}
+
+#playerOne {
+  background-color: rgb(255, 255, 255);
+  width: 20px;
+  height: 80px;
+  position: absolute;
+  left: 50px;  /* Uncomment if you want to set a "starting" position */
+  top: 200px;   /* Uncomment if you want to set a "starting" position */
+}
+
+#playerTwo {
+  background-color: rgb(255, 255, 255);
+  width: 20px;
+  height: 80px;
+  position: absolute;
+  left: 730px;  /* Uncommenwt if you want to set a "starting" position */
+  top: 200px;   /* Uncomment if you want to set a "starting" position */
+}
+
+#ball {
+  background-color: rgb(3, 238, 35);
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  position: absolute;
+  left: 395px;
+  top: 225px; 
 }
