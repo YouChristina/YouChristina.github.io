@@ -36,7 +36,7 @@ function applyFilterNoBackground(filterFunction){
     for (var r = 0; r < image.length; r++){
         for (var c = 0; c < image[r].length; c++){
             var rgbString = image[r][c];
-            if (rgbString !== image[1][1]){
+            if (rgbString !== image[0][0]){
                 var rgbNumbers = rgbStringToArray(rgbString);
                 filterFunction(rgbNumbers);
                 rgbString = rgbArrayToString(rgbNumbers);
